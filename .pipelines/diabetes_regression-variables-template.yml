@@ -39,13 +39,13 @@ variables:
   - name: AML_ENV_TRAIN_CONDA_DEP_FILE
     value: "conda_dependencies.yml"
   - name: AML_COMPUTE_CLUSTER_CPU_SKU
-    value: STANDARD_DS2_V2
+    value: STANDARD_DS3_V2
   - name: AML_COMPUTE_CLUSTER_NAME
-    value: train-cluster
+    value: train-clust
   - name: AML_CLUSTER_MIN_NODES
     value: 0
   - name: AML_CLUSTER_MAX_NODES
-    value: 4
+    value: 1
   - name: AML_CLUSTER_PRIORITY
     value: lowpriority
 
