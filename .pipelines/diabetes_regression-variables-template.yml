@@ -39,13 +39,13 @@ variables:
   - name: AML_ENV_TRAIN_CONDA_DEP_FILE
     value: "conda_dependencies.yml"
   - name: AML_COMPUTE_CLUSTER_CPU_SKU
-    value: STANDARD_DS3_V2
+    value: STANDARD_DS2_V2
   - name: AML_COMPUTE_CLUSTER_NAME
     value: train-clust
   - name: AML_CLUSTER_MIN_NODES
     value: 0
   - name: AML_CLUSTER_MAX_NODES
-    value: 1
+    value: 3
   - name: AML_CLUSTER_PRIORITY
     value: lowpriority
 
@@ -90,7 +90,7 @@ variables:
   - name: AML_CLUSTER_MIN_NODES_SCORING
     value: 0
   - name: AML_CLUSTER_MAX_NODES_SCORING
-    value: 4
+    value: 3
   - name: AML_CLUSTER_PRIORITY_SCORING
     value: lowpriority
   # The path to the batch scoring script relative to SOURCES_DIR_TRAIN
